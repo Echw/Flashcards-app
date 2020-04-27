@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #2b2b2b;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* ADD BUTTON */
+.add-button {
+  position: relative;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  left: 80vw;
+  background: none;
+  border: 2px solid black;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3);
+  font-weight: lighter;
+}
+
+/* FLASHCARDS */
+.main {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 3rem;
+  position: relative;
+  width: 40em;
+  height: 25em;
+  background: white;
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3), 0px 20px 20px rgb(0, 0, 0, 0.3);
+}
+
+.card>.img {
+  position: absolute;
+  background-image: url(/img/wave.png);
+  height: 100%;
+  width: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25rem 25rem;
+  opacity: 0.3;
+}
+
+.polish {
+  background: #1e1e1e;
+  color: #888686;
+  overflow: hidden;
+}
+
+.english {
+  color: #1e1e1e;
+}
+
+.english>h1,
+.polish>input {
+  font-size: 4rem;
+  margin: 5rem 0 3rem 8rem;
+}
+
+.polish>input {
+  width: 30rem;
+  background: none;
+  border: none;
+  border-bottom: 0.3rem solid #888686;
+  color: #888686;
+}
+
+.english>h2,
+.polish>h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 2rem 0 0 8rem;
+}
+
+/* MODAL */
